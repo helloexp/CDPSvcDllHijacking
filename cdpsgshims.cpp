@@ -7,7 +7,7 @@
 * Description.....: In Windows 10, the Connected Devices Platform Service (CDPSvc) tries to load 
 *                   the missing cdpsgshims.dll DLL with a call to LoadLibraryEx() without 
 *                   specifying its absolute path. Therefore it's potentially vulerable to DLL 
-*                   planting in PATH directories. Withe the ability to execute arbitrary code
+*                   planting in PATH directories. With the ability to execute arbitrary code
 *                   in the context of the service as LOCAL SERVICE, it is possible to bruteforce
 *                   open handles in order to find a valid SYSTEM impersonation token Handle. 
 * Tested on.......: Windows 10 64bits 1903 (18362.1.amd64fre.19h1_release.190318-1202)
